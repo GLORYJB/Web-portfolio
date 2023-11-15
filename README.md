@@ -1,0 +1,7 @@
+# Web-portfolio
+GitHub Desktop tutorial repository
+
+NAME: GLORIA J BATAKYANGA
+REG NO:2102209113069
+LECTURE: GIFT MSIGWA
+CLASS: OD21IT
