@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-18">
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>QUIDS</title>
+
+</head>
+
+<body>
+
+<header class="header">
+    <a href="#" class="logo">.QUIDS</a>
+
+    <nav class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">Portofolio</a>
+        <a href="#">Contact</a>
+        <a href="login.html"><button class="btnlogin-popup">login</button></a>
+    </nav>
+</header>
+
+<section class="home">
+    <div class="home-content">
+        <h1>Hi! welcome to QUIDS services</h1>
+        <h3>We provide Web services</h3>
+        <p>A web service is a software system that supports interoperable machine-to-machine 
+            interaction over a network. 
+            It has an interface described in a machine-processable format (specifically,
+         web Service Definition Language, or WSDL). 
+         web services fulfill a specific task or a set of tasks</p>
+         <div class="btn-box">
+            <a href="#">Hire me</a>
+            <a href="#">let's talk</a>
+          </div>
+
+
+    </div>
+
+</section>
+
+<section class="about" id="about">
+    <h2 class="heading">About <span>Me</span></h2>
+
+    <div class="about-img">
+        <img src="about.PNG" alt="">
+        <span class="circle-spin"></span>
+    </div>
+
+    <div class="about-content">
+        <h3>Web designer!</h3>
+        <p>Web designers focus on the visuals and are usually not responsible for coding the website. 
+            Writing: Web designers should not be expected to write any website copy. 
+            Many use lorem ipsum placeholder text in their designs if the copy is not already prepared.</p>
+
+            <div class="btn-box.btns">
+                <a href="#" class="btn">Read more</a>
+            </div>
+    </div>
+
+
+
+</section>
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900$ display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #081b29;
+    color: white;
+
+}
+.header{
+    position:fixed ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100%;
+
+}
+
+.navbar .btnlogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border-radius:6px ;
+    outline:none ;
+    border: 2px solid #fff;
+    font-size:  1.1em; ;
+    font-weight: 500;
+    cursor: pointer;
+    color: #fff;
+    transition: 1s;
+}
+.navbar .btnlogin-popup:hover{
+    color:blue;
+    background: #fff;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 1s;
+}
+.navbar a:hover,
+.navbar a:active {
+       color: blue;
+
+}
+
+.home {
+    height:100vh ;
+    background: url('home.PNG') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0 10%;
+    align-items:center ;
+    display: flex;
+}
+.home-content {
+    max-width: 600px;
+}
+.home-content h1 {
+    font-size:32px ;
+    font-weight: 700;
+    line-height: 1,2;
+}
+
+
+.home-content h3 {
+    font-size:22px ;
+    font-weight:700 ;
+    color: blueviolet;
+
+}
+.home-content p {
+    font-size: 12px;
+    margin: 20px 0 40px;
+
+}
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 342px;
+    height: 50px;
+    
+}
+
+.btn-box a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    border:2px solid lightskyblue ;
+    border-radius:8px ;
+    background: lightskyblue;
+    color: #081b29;
+    font-size:19px ;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--second-bg-color);
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 6rem;
+}
+ .heading{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+ }
+
+ .about-img {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position:relative ;
+    width:25rem ;
+    height:25rem ;
+    border-radius: 50%;
+ }
+
+ .about-img img {
+    width: 70%;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
+ }
+
+ .about-img .circle-spin {
+    position:absolute ;
+    width:70% ;
+    border-radius:50% ;
+    border-bottom:.2rem solid var(--main-color) ;
+    border-top:.2rem solid red ;
+    border-left:.2rem solid var(--main-color);
+    border-right:.2rem solid var(--main-color) ;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%) rotate(0) ;
+    height:100% ;
+ }
+
+ .about-content {
+    text-align: center;
+ }
+
+ .about-content h3 {
+    font-size: 2.6rem;
+ }
+
+ .about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+ }
+ .btn-box.btns {
+    display: inline-block;
+    width: 15rem;
+ }
+.btn-box.btns a::before {
+    background: var(--second-bg-color);
+}
+
+
+
+</style>
+
+</body>
+
+</html>
